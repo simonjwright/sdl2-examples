@@ -74,10 +74,11 @@ jobs:
       name: Checkout
       uses: actions/checkout@v3
     -
-      name: Set up Alire
+      name: Set up Alire (devel)
       uses: alire-project/setup-alire@v2
       with:
-        version: "nightly"
+        branch: "master"
+        # version: "nightly"
     -
       name: Install toolchain
       run: |
