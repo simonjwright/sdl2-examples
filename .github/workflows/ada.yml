@@ -29,8 +29,6 @@ jobs:
     -
       name: Set up Alire
       uses: alire-project/setup-alire@v2
-      with:
-        version: "nightly"
     -
       name: Install toolchain
       run: |
