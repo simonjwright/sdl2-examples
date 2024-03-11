@@ -29,12 +29,11 @@ jobs:
     -
       name: Set up Alire
       uses: alire-project/setup-alire@v2
+      version: nightly
     -
       name: Install toolchain
       run: |
         alr --non-interactive config --global --set toolchain.assistant false
-        alr --non-interactive toolchain --install gnat_native
-        alr --non-interactive toolchain --install gprbuild
         alr --non-interactive toolchain --select gnat_native
         alr --non-interactive toolchain --select gprbuild
     -
